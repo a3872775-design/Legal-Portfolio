@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Kumari | Law Student & Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AK</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Arya Kumari</h1>
+            <p>Law Student at HPNLU, Shimla | Researcher | Aspiring Litigator</p>
+            <a href="#experience" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am a law student at Himachal Pradesh National Law University (2023-2028) with a focus on Constitutional Law, Arbitration, and Criminal Law. Currently maintaining a CGPA of 7.3, I serve as a Student Editor for the Shimla Law Review.</p>
+    </section>
+
+    <section id="experience" class="container">
+        <h2>Professional Experience</h2>
+        <div class="grid">
+            <div class="card" onclick="openModal('asg')">
+                <h3>Supreme Court of India</h3>
+                <p>ASG Chambers (July 2025)</p>
+                <span>Click to see details</span>
+            </div>
+            <div class="card" onclick="openModal('pujari')">
+                <h3>Chambers of Adit S. Pujari</h3>
+                <p>Legal Intern (Jan 2026)</p>
+                <span>Click to see details</span>
+            </div>
+            <div class="card" onclick="openModal('patna')">
+                <h3>Patna High Court</h3>
+                <p>Additional Advocate General (2024-2025)</p>
+                <span>Click to see details</span>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal-overlay" class="overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <section id="contact" class="container">
+        <h2>Get In Touch</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Arya Kumari. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
